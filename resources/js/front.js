@@ -9,9 +9,9 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 import App from "./views/App";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
+import Home from "./page/Home";
+import About from "./page/About";
+import Contact from "./page/Contact";
 import VueRouter from "vue-router";
 import Vue from "vue";
 
