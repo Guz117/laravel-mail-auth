@@ -48,7 +48,8 @@ export default {
     },
     methods: {
         sendForm(){
-            this.sending = true
+            this.sending = true;
+            this.success = false;
             axios.post('/api/contacts',
             {
                 'name': this.name,
@@ -57,7 +58,7 @@ export default {
             })
             .then(response=>{
                 console.log(response.data);
-                if (!response.data.succes){
+                if (!response.data.success){
                     this.success = false;
                     this.errors = response.data.errors;
                 } else {
